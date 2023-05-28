@@ -1,0 +1,58 @@
+header{
+    background-color: azure;
+}
+.header__titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    border: 0.5 solid palevioletred;
+    border-radius: 2rem;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-around;
+    .header__menu{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        .header__link{
+            padding: 0.8rem;
+            color: black;
+            text-decoration: none;
+            &.header__link:hover{
+                background-color: black;
+                color: crimson;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+.contenedor__padre{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: 
+    "img1 img1 img2 img2"
+    "img1 img1 img2 img2"
+    "img1 img1 img3 img3"
+    "img1 img1 img3 img3"
+    ;
+    .img1{
+        width: 48rem;
+        height: 66.2rem;
+        grid-area: img1;
+    }
+    .img2{
+        width: 36.2rem;
+        height: 30rem;
+        grid-area: img2;
+    }
+    .img3{
+        width: 36.2rem;
+        height: 36.2rem;
+        grid-area: img3;
+    }
+}
