@@ -1,34 +1,15 @@
 header{
     background-color: azure;
 }
+/*en el titulo e utilizado tipografias de google*/
 .header__titulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ultra', serif;
     color: crimson;
     text-align: center;
     margin: 0 auto;
     background-color: black;
     border: 0.5 solid palevioletred;
     border-radius: 2rem;
-}
-.header__nav{
-    display: flex;
-    justify-content: space-around;
-    .header__menu{
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        .header__link{
-            padding: 0.8rem;
-            color: black;
-            text-decoration: none;
-            &.header__link:hover{
-                background-color: black;
-                color: crimson;
-                border-radius: 1rem;
-            }
-        }
-    }
 }
 .contenedor__padre{
     display: grid;
@@ -54,5 +35,30 @@ header{
         width: 36.2rem;
         height: 36.2rem;
         grid-area: img3;
+    }
+}
+/*es un logo de utilidad para volver a la pagina principal en todos los html, solo en el index esta puesto pero no redirecciona*/
+.logo{
+    width: 80px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*responsive de la pagina principal*/
+@media (max-width: 480px) {
+    .contenedor__padre{
+        display: block;
+        .img1{
+            width: 30rem;
+            height: 42rem;
+        }
+        .img2{
+            width: 30rem;
+        }
+        .img3{
+            width: 30rem;
+            height: 23rem;
+        }
     }
 }

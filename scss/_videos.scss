@@ -2,3 +2,12 @@ video{
     width: 20rem;
     height: 20rem;
 }
+/*responsive de la pagina videos*/
+@media (max-width: 480px){
+    video{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    }
+}

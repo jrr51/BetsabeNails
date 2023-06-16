@@ -1,3 +1,9 @@
 .img__precio{
     text-align: center;
 }
+/*responsive de la pagina lista de precios*/
+@media (max-width: 480px){
+    .precios{
+        width: 30rem;
+    }
+}

@@ -3,38 +3,23 @@
   margin: 0;
   box-sizing: border-box; }
 
+/*en el body e puesto una img de fondo que utilice de canva*/
 body {
-  background-color: black;
+  background-image: url("../img/fondo pag. web.png");
   font-family: Arial, Helvetica, sans-serif; }
 
 header {
   background-color: azure; }
 
+/*en el titulo e utilizado tipografias de google*/
 .header__titulo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ultra', serif;
   color: crimson;
   text-align: center;
   margin: 0 auto;
   background-color: black;
   border: 0.5 solid palevioletred;
   border-radius: 2rem; }
-
-.header__nav {
-  display: flex;
-  justify-content: space-around; }
-  .header__nav .header__menu {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 1rem; }
-    .header__nav .header__menu .header__link {
-      padding: 0.8rem;
-      color: black;
-      text-decoration: none; }
-      .header__nav .header__menu .header__link.header__link:hover {
-        background-color: black;
-        color: crimson;
-        border-radius: 1rem; }
 
 .contenedor__padre {
   display: grid;
@@ -54,6 +39,27 @@ header {
     height: 36.2rem;
     grid-area: img3; }
 
+/*es un logo de utilidad para volver a la pagina principal en todos los html, solo en el index esta puesto pero no redirecciona*/
+.logo {
+  width: 80px;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+/*responsive de la pagina principal*/
+@media (max-width: 480px) {
+  .contenedor__padre {
+    display: block; }
+    .contenedor__padre .img1 {
+      width: 30rem;
+      height: 42rem; }
+    .contenedor__padre .img2 {
+      width: 30rem; }
+    .contenedor__padre .img3 {
+      width: 30rem;
+      height: 23rem; } }
+
 footer {
   background-color: azure;
   text-align: center;
@@ -65,44 +71,74 @@ footer {
     width: 2.3rem; }
 
 .subtitulos {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: crimson;
-  text-align: center;
-  margin: 0 auto;
-  border: 0.5rem dotted palevioletred; }
+  font-family: 'Pinyon Script', cursive;
+  color: black;
+  text-align: center; }
 
-main .container {
-  display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: repeat(3 1fr);
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row dense;
-  grid-template-areas: "img4 img4 img5 img5" "img4 img4 img6 img6" "img7 img7 img8 img8"; }
-  main .container .img4 {
-    width: 43rem;
-    height: 40rem;
-    grid-area: img4; }
-  main .container .img5 {
-    width: 41rem;
-    height: 32.2rem;
-    grid-area: img5; }
-  main .container .img6 {
-    width: 41rem;
-    height: 32.2rem;
-    grid-area: img6; }
-  main .container .img7 {
-    width: 42.9rem;
-    height: 32.2rem;
-    grid-area: img7; }
-  main .container .img8 {
-    width: 41rem;
-    height: 32.2rem;
-    grid-area: img8; }
+/*en los todos los subtitulos e utilizado tipografias de google*/
+main {
+  /*responsive de la pagina imagenes*/ }
+  main .container {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: "img4 img5 img5" "img4 img6 img6" "img7 img8 img8"; }
+    main .container .img4 {
+      width: 35rem;
+      height: 70rem;
+      grid-area: img4; }
+    main .container .img5 {
+      width: 30rem;
+      height: 35rem;
+      grid-area: img5; }
+    main .container .img6 {
+      width: 30rem;
+      height: 35rem;
+      grid-area: img6; }
+    main .container .img7 {
+      width: 35rem;
+      height: 32.2rem;
+      grid-area: img7; }
+    main .container .img8 {
+      width: 30rem;
+      height: 32.2rem;
+      grid-area: img8; }
+  @media (max-width: 480px) {
+    main .container {
+      display: flex;
+      flex-direction: column; }
+      main .container .img4 {
+        width: 28.5rem;
+        height: 40rem; }
+      main .container .img5 {
+        width: 28.5rem; }
+      main .container .img6 {
+        width: 28.5rem; }
+      main .container .img7 {
+        width: 28.5rem; }
+      main .container .img8 {
+        width: 28.5rem; } }
+
+/*animacion de imagenes*/
+.container :hover {
+  transform: translate(15px, 25px); }
 
 .img__precio {
   text-align: center; }
 
+/*responsive de la pagina lista de precios*/
+@media (max-width: 480px) {
+  .precios {
+    width: 30rem; } }
+
 video {
   width: 20rem;
   height: 20rem; }
+
+/*responsive de la pagina videos*/
+@media (max-width: 480px) {
+  video {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }

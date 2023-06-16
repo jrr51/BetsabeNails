@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="manicurista profesional de uñas personalizadas">
+    <meta name="description" content="manicurista profesional de uñas personalizadas de estructuras stiletto,almendra, cuadrada y coffie. Tipos de estilos de uñas boutique: reversa (baby glam con punta fantasia), baby boomer (baby gliter, baby milk, baby color), encapsulado.">
     <meta name="keywords" content="uñas personalizadas, manicurista, local">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>BetsabeNails | Pagina pricipal</title>
 </head>
 <body>
-    <header>
+    <!--en cada html de todas la paginas le agregue el logo que redirecciona a la pagina principal, menos en el index, agregue el menu de bootstrap en todos los html que al realizar el responsive se hace el menu hamburguesa, describi las imagenes en los alt, redimensione la imagenes, agrege mas descripcion en la etiqueta meta descrition. -->
+    <header class="bootstrap">
         <h1 class="header__titulo">BetsabeNails</h1>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__item">
-                    <a class="header__link" href="./pages/biografia.html">Biografia</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="./img/nail beauty.png" alt="logo de la pagina"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/biografia.html">Biografia</a>
                 </li>
-                <li class="header__item">
-                    <a class="header__link" href="./pages/imagenes.html">Imagenes</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/imagenes.html">Imagenes</a>
                 </li>
-                <li class="header__item">
-                    <a class="header__link" href="./pages/listadeprecios.html">Lista de precios</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/listadeprecios.html">Lista de precios</a>
                 </li>
-                <li class="header__item">
-                    <a class="header__link" href="./pages/videos.html">Videos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/videos.html">Videos</a>
                 </li>
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main class="contenedor__padre">
-        <img class="img1" src="./img/IMG-20230503-WA0006.jpg" alt="Betsabe manicurista">
-        <img class="img2" src="./img/IMG-20230109-WA0001.jpg" alt="Betsabe manicurista">
-        <img class="img3" src="./img/IMG-20230503-WA0043.jpg" alt="Betsabe manicurista">
+        <img class="img1" src="./img/BetsabeNails2.png" alt="Betsabe manicurista con su chaquetilla negro de bordes rosa, sonriendo, arriba de ella esta el cartel luminoso que esta puesto en su local">
+        <img class="img2" src="./img/betsabeNails1.png" alt="imagen en donde ella esta sentada trabajando con guantes rosa y sus lentes puestos, con una chaquetilla negra de ositos">
+        <img class="img3" src="./img/BetsabeNails3 (1).png" alt="Bersabe esta sentada en su local trabajando, con una bluza blanca, tiene puesto unos guantes rosas, sus lentes puestos muy concentrada mientras trabaja en la mano de la clienta, en la pared el cartel luminoso de su local que dice BetsabeNails">
     </main>
     <footer>
         <a class="link" href="https://www.instagram.com/betsabe_nails_/" target="_blank">
-            <img class="logo" src="./img/instagram.jpg" alt="instagram">
+            <img class="logo" src="./img/instagram.jpg" alt="logo de instagram, que redirije a su blog de instagram">
         </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
